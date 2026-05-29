@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FLINT52 research areas — Bangla NLP, LLM fine-tuning, low-resource learning, and evaluation benchmarks." />
+  <title>Research — FLINT52</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+
+        <a href="index.html" class="nav__logo" aria-label="FLINT52 home">
+          <img src="asset/logo/light.png" class="logo-for-light"
+               alt="FLINT52" width="140" height="40" loading="eager" />
+          <img src="asset/logo/dark.png"  class="logo-for-dark"
+               alt="FLINT52" width="140" height="40" loading="eager" />
+        </a>
+
+        <ul class="nav__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+      </nav>
+    </div>
+
+    <div class="nav__mobile" role="dialog" aria-label="Navigation">
+      <ul role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ── PAGE HERO ── -->
+    <section class="section section--tight">
+      <div class="container">
+        <span class="eyebrow">What We Study</span>
+        <h1 style="font-size:var(--text-2xl); margin-top:var(--space-4); max-width:20ch;">
+          Research at the frontier of <span class="text-accent">Bangla language AI</span>
+        </h1>
+        <p style="margin-top:var(--space-5); font-size:var(--text-lg); max-width:56ch;">
+          Our work spans four interconnected research areas — all aimed at making
+          AI more capable, equitable, and useful for Bangla speakers worldwide.
+        </p>
+      </div>
+    </section>
+
+    <div class="divider" style="margin:0"></div>
+
+    <!-- ── RESEARCH AREA 1 ── -->
+    <section class="section" id="bangla-nlp">
+      <div class="container">
+        <div class="research-areas">
+
+          <div class="research-area reveal">
+            <div class="research-area__content">
+              <span class="eyebrow">Area 01</span>
+              <h2 style="font-size:var(--text-xl);">Bangla NLP</h2>
+              <p>
+                We develop core NLP components for Bangla — a morphologically rich,
+                fusional language with significant dialectal variation. Our work covers
+                the full pipeline from raw text to structured linguistic representations.
+              </p>
+              <div class="prose">
+                <ul>
+                  <li>Subword tokenisation tailored to Bangla morphology</li>
+                  <li>Part-of-speech tagging for standard and colloquial Bangla</li>
+                  <li>Named entity recognition across news, social media, and literature</li>
+                  <li>Dependency parsing and syntactic analysis</li>
+                  <li>Sentiment analysis and opinion mining</li>
+                </ul>
+              </div>
+              <div class="tag-list">
+                <span class="tag">Tokenisation</span>
+                <span class="tag">POS Tagging</span>
+                <span class="tag">NER</span>
+                <span class="tag">Dependency Parsing</span>
+                <span class="tag">Sentiment Analysis</span>
+              </div>
+              <div style="display:flex; gap:var(--space-3); flex-wrap:wrap; margin-top:var(--space-2)">
+                <a href="publications.html" class="btn btn--ghost">Related Papers →</a>
+                <a href="projects.html" class="btn btn--ghost">Related Projects →</a>
+              </div>
+            </div>
+            <div class="research-area__visual" aria-hidden="true">
+              <div style="position:absolute; inset:0; display:grid; place-items:center; padding:var(--space-8);">
+                <div style="font-family:var(--font-display); font-size:clamp(2rem,4vw,3.5rem);
+                            font-weight:800; color:var(--color-primary); opacity:0.18;
+                            text-align:center; line-height:1.2; letter-spacing:-0.04em;">
+                  আমি বাংলায় গান গাই
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" style="margin:0"></div>
+
+    <!-- ── RESEARCH AREA 2 ── -->
+    <section class="section" id="llm-finetuning"
+             style="background:var(--color-surface); border-top:1px solid var(--color-border);">
+      <div class="container">
+        <div class="research-areas">
+
+          <div class="research-area reveal">
+            <div class="research-area__content">
+              <span class="eyebrow">Area 02</span>
+              <h2 style="font-size:var(--text-xl);">LLM Fine-tuning</h2>
+              <p>
+                We investigate parameter-efficient methods for adapting large
+                pre-trained language models to Bangla tasks — achieving strong
+                performance without requiring full model retraining.
+              </p>
+              <div class="prose">
+                <ul>
+                  <li>LoRA and QLoRA adaptation for Bangla instruction following</li>
+                  <li>Instruction-tuning dataset curation and quality filtering</li>
+                  <li>Continual pre-training on Bangla corpora</li>
+                  <li>RLHF and preference alignment for Bangla chat models</li>
+                  <li>Multilingual fine-tuning with Bangla as primary target</li>
+                </ul>
+              </div>
+              <div class="tag-list">
+                <span class="tag">LoRA</span>
+                <span class="tag">QLoRA</span>
+                <span class="tag">Instruction Tuning</span>
+                <span class="tag">RLHF</span>
+                <span class="tag">Continual Pre-training</span>
+              </div>
+              <div style="display:flex; gap:var(--space-3); flex-wrap:wrap; margin-top:var(--space-2)">
+                <a href="publications.html" class="btn btn--ghost">Related Papers →</a>
+                <a href="projects.html" class="btn btn--ghost">Related Projects →</a>
+              </div>
+            </div>
+            <div class="research-area__visual" aria-hidden="true">
+              <div style="position:absolute; inset:0; display:grid; place-items:center; padding:var(--space-8);">
+                <svg viewBox="0 0 200 120" width="180" height="108"
+                     fill="none" stroke="var(--color-primary)" stroke-width="1.5" opacity="0.28">
+                  <rect x="10"  y="45" width="40" height="30" rx="6"/>
+                  <rect x="80"  y="20" width="40" height="80" rx="6"/>
+                  <rect x="150" y="35" width="40" height="50" rx="6"/>
+                  <line x1="50"  y1="60"  x2="80"  y2="60"/>
+                  <line x1="120" y1="60"  x2="150" y2="60"/>
+                  <circle cx="65"  cy="60" r="4" fill="var(--color-primary)"/>
+                  <circle cx="135" cy="60" r="4" fill="var(--color-primary)"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" style="margin:0"></div>
+
+    <!-- ── RESEARCH AREA 3 ── -->
+    <section class="section" id="low-resource">
+      <div class="container">
+        <div class="research-areas">
+
+          <div class="research-area reveal">
+            <div class="research-area__content">
+              <span class="eyebrow">Area 03</span>
+              <h2 style="font-size:var(--text-xl);">Low-resource Learning</h2>
+              <p>
+                Many Bangla NLP tasks lack sufficient annotated data. We develop
+                techniques that allow models to learn robustly from small datasets,
+                noisy labels, and cross-lingual supervision.
+              </p>
+              <div class="prose">
+                <ul>
+                  <li>Few-shot and zero-shot learning for Bangla classification tasks</li>
+                  <li>Cross-lingual transfer from high-resource languages</li>
+                  <li>Data augmentation via back-translation and paraphrasing</li>
+                  <li>Semi-supervised and self-supervised learning approaches</li>
+                  <li>Active learning for efficient annotation of Bangla corpora</li>
+                </ul>
+              </div>
+              <div class="tag-list">
+                <span class="tag">Few-shot</span>
+                <span class="tag">Zero-shot</span>
+                <span class="tag">Transfer Learning</span>
+                <span class="tag">Data Augmentation</span>
+                <span class="tag">Active Learning</span>
+              </div>
+              <div style="display:flex; gap:var(--space-3); flex-wrap:wrap; margin-top:var(--space-2)">
+                <a href="publications.html" class="btn btn--ghost">Related Papers →</a>
+                <a href="projects.html" class="btn btn--ghost">Related Projects →</a>
+              </div>
+            </div>
+            <div class="research-area__visual" aria-hidden="true">
+              <div style="position:absolute; inset:0; display:grid; place-items:center; padding:var(--space-8);">
+                <svg viewBox="0 0 200 140" width="180" height="126"
+                     fill="none" stroke="var(--color-primary)" stroke-width="1.5" opacity="0.28">
+                  <circle cx="100" cy="70" r="50"/>
+                  <circle cx="100" cy="70" r="32"/>
+                  <circle cx="100" cy="70" r="14"/>
+                  <circle cx="100" cy="70" r="4" fill="var(--color-primary)"/>
+                  <line x1="100" y1="20" x2="100" y2="10"/>
+                  <line x1="100" y1="120" x2="100" y2="130"/>
+                  <line x1="50"  y1="70" x2="40"  y2="70"/>
+                  <line x1="150" y1="70" x2="160" y2="70"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" style="margin:0"></div>
+
+    <!-- ── RESEARCH AREA 4 ── -->
+    <section class="section" id="evaluation"
+             style="background:var(--color-surface); border-top:1px solid var(--color-border);">
+      <div class="container">
+        <div class="research-areas">
+
+          <div class="research-area reveal">
+            <div class="research-area__content">
+              <span class="eyebrow">Area 04</span>
+              <h2 style="font-size:var(--text-xl);">Evaluation &amp; Benchmarks</h2>
+              <p>
+                Reliable progress requires reliable measurement. We design evaluation
+                frameworks and public benchmarks that rigorously test Bangla language
+                models across diverse tasks and domains.
+              </p>
+              <div class="prose">
+                <ul>
+                  <li>Multi-task benchmark suites covering NLU and NLG</li>
+                  <li>Human evaluation protocols for generative Bangla models</li>
+                  <li>Domain-specific evaluation — news, healthcare, legal, informal text</li>
+                  <li>Bias and fairness auditing for Bangla language models</li>
+                  <li>Reproducibility standards and open leaderboards</li>
+                </ul>
+              </div>
+              <div class="tag-list">
+                <span class="tag">Benchmarks</span>
+                <span class="tag">NLU Evaluation</span>
+                <span class="tag">NLG Evaluation</span>
+                <span class="tag">Bias Auditing</span>
+                <span class="tag">Leaderboards</span>
+              </div>
+              <div style="display:flex; gap:var(--space-3); flex-wrap:wrap; margin-top:var(--space-2)">
+                <a href="publications.html" class="btn btn--ghost">Related Papers →</a>
+                <a href="projects.html" class="btn btn--ghost">Related Projects →</a>
+              </div>
+            </div>
+            <div class="research-area__visual" aria-hidden="true">
+              <div style="position:absolute; inset:0; display:grid; place-items:center; padding:var(--space-8);">
+                <svg viewBox="0 0 200 130" width="180" height="117"
+                     fill="none" stroke="var(--color-primary)" stroke-width="1.5" opacity="0.28">
+                  <polyline points="20,110 50,75 80,88 110,40 140,55 170,20"/>
+                  <circle cx="20"  cy="110" r="4" fill="var(--color-primary)"/>
+                  <circle cx="50"  cy="75"  r="4" fill="var(--color-primary)"/>
+                  <circle cx="80"  cy="88"  r="4" fill="var(--color-primary)"/>
+                  <circle cx="110" cy="40"  r="4" fill="var(--color-primary)"/>
+                  <circle cx="140" cy="55"  r="4" fill="var(--color-primary)"/>
+                  <circle cx="170" cy="20"  r="4" fill="var(--color-primary)"/>
+                  <line x1="20" y1="120" x2="180" y2="120"/>
+                  <line x1="20" y1="10"  x2="20"  y2="120"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA ── -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div class="cta-band__inner">
+            <div>
+              <span class="eyebrow">Collaborate</span>
+              <h2 style="font-size:var(--text-xl); margin-top:var(--space-3);">
+                Interested in our research?
+              </h2>
+              <p style="margin-top:var(--space-3);">
+                We welcome collaborations, dataset contributions, and
+                joint research proposals from institutions worldwide.
+              </p>
+            </div>
+            <div style="display:flex; flex-wrap:wrap; gap:var(--space-3)">
+              <a href="publications.html" class="btn btn--primary">Read Our Papers</a>
+              <a href="contact.html" class="btn btn--secondary">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo" aria-label="FLINT52 home">
+            <img src="asset/logo/light.png" class="logo-for-light"
+                 alt="FLINT52" width="120" height="34" loading="lazy" />
+            <img src="asset/logo/dark.png"  class="logo-for-dark"
+                 alt="FLINT52" width="120" height="34" loading="lazy" />
+          </a>
+          <p>Fine-tuned Language &amp; Intelligent Neural Technology Lab.<br>
+             Advancing Bangla language AI in Bangladesh.</p>
+          <p class="footer__meta">
+            © <span data-year></span> FLINT52. All rights reserved.
+          </p>
+        </div>
+
+        <div>
+          <p class="kicker" style="margin-bottom:var(--space-4)">Pages</p>
+          <ul class="footer__links" role="list">
+            <li><a href="about.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="kicker" style="margin-bottom:var(--space-4)">Lab</p>
+          <ul class="footer__links" role="list">
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/flint52" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><span class="ph">Email Address</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+</body>
+</html>

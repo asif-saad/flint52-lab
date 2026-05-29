@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FLINT52 — Bangla Language Models & AI Research Lab</title>
+  <meta name="description" content="FLINT52 is an AI research lab in Chittagong, Bangladesh specializing in Bangla language models, neural architectures, and NLP for low-resource languages. Fine-tuned LLMs, RLHF, and applied AI solutions."/>
+  <meta name="keywords" content="Bangla language models, NLP research, LLM fine-tuning, low-resource languages, AI research lab, neural architecture, RLHF, natural language processing, Bangla AI, Bangladesh research"/>
+  <meta name="author" content="FLINT52"/>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"/>
+  <meta name="theme-color" content="#016F6F"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  
+  <!-- Canonical URL for SEO -->
+  <link rel="canonical" href="https://asif-saad.github.io/flint52-lab.github.io/"/>
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://asif-saad.github.io/flint52-lab.github.io/"/>
+  <meta property="og:title" content="FLINT52 — Bangla Language Models & AI Research Lab"/>
+  <meta property="og:description" content="Leading AI research lab in Bangladesh focused on Bangla language models, neural architectures, and NLP for underrepresented languages. Open research on fine-tuning, RLHF, and applied AI solutions."/>
+  <meta property="og:image" content="https://asif-saad.github.io/flint52-lab.github.io/asset/logo/light.png"/>
+  <meta property="og:site_name" content="FLINT52"/>
+  <meta property="og:locale" content="en_US"/>
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="FLINT52 — Bangla Language Models & AI Research Lab"/>
+  <meta name="twitter:description" content="AI research lab in Bangladesh specializing in Bangla language models and NLP for low-resource languages."/>
+  <meta name="twitter:image" content="https://asif-saad.github.io/flint52-lab.github.io/asset/logo/light.png"/>
+  <meta name="twitter:domain" content="asif-saad.github.io"/>
+
+  <!-- Favicon: shows your logo on the browser tab -->
+  <link rel="icon" id="favicon-el" type="image/png" href="asset/logo/light.png"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://api.fontshare.com"/>
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&f[]=satoshi@400,500,700&display=swap" rel="stylesheet"/>
+
+  <!-- ONE shared stylesheet for ALL pages -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- JSON-LD Structured Data for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    "name": "FLINT52",
+    "alternateName": "Fine-tuned Language & Intelligent Neural Technology Lab",
+    "url": "https://asif-saad.github.io/flint52-lab.github.io/",
+    "description": "A research lab in Chittagong, Bangladesh focused on Bangla language models, neural architectures, and NLP for low-resource languages",
+    "foundingDate": "2024",
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "Chittagong, Bangladesh"
+    },
+    "areaOfFocus": ["Bangla Language Models", "Natural Language Processing", "Fine-tuning", "RLHF", "Neural Architecture", "Low-resource Languages"],
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://asif-saad.github.io/flint52-lab.github.io/asset/logo/light.png",
+      "width": 140,
+      "height": 40
+    },
+    "sameAs": [],
+    "keywords": "Bangla, language models, NLP, AI research, RLHF, fine-tuning, neural networks"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "FLINT52",
+        "item": "https://asif-saad.github.io/flint52-lab.github.io/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Page-specific styles only -->
+  <style>
+    /* ── HERO ── */
+    .hero {
+      padding-block: clamp(var(--space-16), 10vw, var(--space-24));
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-8); }
+    .hero h1 {
+      font-size: var(--text-3xl); font-weight: 800;
+      letter-spacing: -0.03em; color: var(--text);
+      margin-bottom: var(--space-6); max-width: 16ch;
+    }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .hero-desc {
+      font-size: var(--text-lg); color: var(--text-muted);
+      max-width: 54ch; line-height: 1.7; margin-bottom: var(--space-8);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+
+    /* ── STATS ── */
+    .stats { 
+      padding-block: var(--space-16); 
+      border-bottom: 1px solid var(--border); 
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--space-6);
+      width: 100%;
+    }
+    .stat-cell {
+      background: linear-gradient(135deg, var(--surface) 0%, var(--color-surface-2) 100%);
+      padding: var(--space-8) var(--space-5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-lg);
+      transition: all var(--transition-slow);
+      position: relative;
+      overflow: visible;
+      min-height: 160px;
+    }
+    .stat-cell::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(135deg, var(--color-primary-highlight), transparent);
+      opacity: 0;
+      transition: opacity var(--transition-slow);
+      pointer-events: none;
+    }
+    .stat-cell:hover {
+      border-color: var(--accent);
+      box-shadow: 0 8px 24px rgba(1, 105, 111, 0.12);
+      transform: translateY(-4px);
+    }
+    .stat-cell:hover::before { opacity: 1; }
+    .stat-cell > * { position: relative; z-index: 1; }
+    @media (max-width: 1024px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+    }
+    @media (max-width: 640px) {
+      .stats-grid { grid-template-columns: 1fr; gap: var(--space-3); }
+      .stat-cell { padding: var(--space-6) var(--space-4); min-height: auto; }
+    }
+    .stat-num {
+      font-family: var(--font-display); 
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 800; 
+      color: var(--accent);
+      letter-spacing: -0.04em; 
+      line-height: 1; 
+      margin-bottom: var(--space-2);
+      font-variant-numeric: tabular-nums;
+    }
+    .stat-label { 
+      font-size: var(--text-sm); 
+      color: var(--text-muted); 
+      font-weight: 600; 
+      line-height: 1.4;
+      max-width: 18ch;
+      word-wrap: break-word;
+    }
+
+
+    /* ── RESEARCH CARDS ── */
+    .research-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+    .rcard {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-xl); padding: var(--space-8);
+      display: flex; flex-direction: column; gap: var(--space-4);
+      transition: box-shadow var(--transition);
+    }
+    .rcard:hover { box-shadow: var(--shadow-md); }
+    .rcard-num { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.1em; color: var(--accent); }
+    .rcard h3  { font-size: var(--text-lg); font-weight: 700; color: var(--text); letter-spacing: -0.01em; }
+    .rcard p   { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.7; max-width: 42ch; }
+    .rcard-tags { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: auto; }
+    @media (max-width: 640px) { .research-grid { grid-template-columns: 1fr; } }
+
+    /* ── NEWS ── */
+    .news-list { display: flex; flex-direction: column; }
+    .news-row {
+      display: grid; grid-template-columns: 100px 1fr; gap: var(--space-6);
+      padding-block: var(--space-5); border-top: 1px solid var(--border); align-items: baseline;
+    }
+    .news-row:last-child { border-bottom: 1px solid var(--border); }
+    .news-date { font-size: var(--text-xs); font-weight: 600; color: var(--text-faint); text-align: right; }
+    .news-text { font-size: var(--text-sm); color: var(--text-muted); line-height: 1.65; max-width: 65ch; }
+    .news-text strong { color: var(--text); font-weight: 600; }
+    .news-text a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 480px) {
+      .news-row { grid-template-columns: 1fr; gap: var(--space-2); }
+      .news-date { text-align: left; }
+    }
+
+    /* ── CTA BLOCK ── */
+    .cta-block {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: clamp(var(--space-10), 6vw, var(--space-16));
+      display: flex; align-items: center; justify-content: space-between;
+      gap: var(--space-8); flex-wrap: wrap;
+    }
+    .cta-text h2 {
+      font-size: var(--text-xl); font-weight: 800;
+      letter-spacing: -0.02em; margin-bottom: var(--space-3);
+    }
+    .cta-text p { font-size: var(--text-base); color: var(--text-muted); max-width: 46ch; line-height: 1.65; }
+  </style>
+</head>
+<body>
+
+<!-- <a class="sr-only" href="#main">Skip to content</a> -->
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav__logo" aria-label="FLINT52 home">
+        <img src="asset/logo/light.png" class="logo-for-light"
+             alt="FLINT52" width="140" height="40" loading="eager" />
+        <img src="asset/logo/dark.png" class="logo-for-dark"
+             alt="FLINT52" width="140" height="40" loading="eager" />
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+  <div class="nav__mobile" role="dialog" aria-label="Navigation">
+    <ul role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-badges">
+        <span class="badge badge-teal">Research Lab</span>
+        <span class="badge badge-muted">Chittagong, Bangladesh</span>
+        <span class="badge badge-muted">Est. 2024</span>
+      </div>
+      <h1>Building <em>Bangla Language Models</em> and <em>AI</em> that speaks natively.</h1>
+      <p class="hero-desc">FLINT52 — Fine-tuned Language &amp; Intelligent Neural Technology Lab — conducts open research on language models, fine-tuning, RLHF, and neural architectures for Bangla and other low-resource languages of South Asia. Advancing NLP for underrepresented communities through cutting-edge AI research.</p>
+      <div class="hero-actions">
+        <a href="research.html" class="btn btn-primary">Explore Research</a>
+        <a href="publications.html" class="btn btn-ghost">Publications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="Lab statistics">
+    <div class="wrap">
+      <div class="stats-grid reveal">
+        <div class="stat-cell">
+          <div class="stat-num">[N]</div>
+          <div class="stat-label">Active Projects</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">[N]</div>
+          <div class="stat-label">Researchers</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">[N]</div>
+          <div class="stat-label">Publications</div>
+        </div>
+        <div class="stat-cell">
+          <div class="stat-num">[N]</div>
+          <div class="stat-label">Datasets Released</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH AREAS -->
+  <section class="section" aria-label="Core research areas">
+    <div class="wrap">
+      <p class="section-eyebrow">What we work on</p>
+      <h2 class="section-title">Core NLP & AI Research Areas</h2>
+      <p class="section-lead">Four interconnected pillars of natural language processing and artificial intelligence research, grounded in the needs of Bangla and low-resource language communities worldwide.</p>
+
+      <div class="research-grid reveal">
+        <div class="rcard">
+          <div class="rcard-num">01</div>
+          <h3>Bangla Language Modeling</h3>
+          <p>Pre-training and fine-tuning advanced large language models (LLMs) for Bangla — including text classification, generation, machine translation, summarization, and question answering at scale.</p>
+          <div class="rcard-tags">
+            <span class="tag">Pre-training</span><span class="tag">LLM</span><span class="tag">NLP</span><span class="tag">Bangla</span>
+          </div>
+        </div>
+        <div class="rcard">
+          <div class="rcard-num">02</div>
+          <h3>Fine-tuning & Alignment</h3>
+          <p>Advanced instruction tuning, reinforcement learning from human feedback (RLHF), and direct preference optimization (DPO) methods to align language models with human values and safety standards in Bangla and multilingual contexts.</p>
+          <div class="rcard-tags">
+            <span class="tag">RLHF</span><span class="tag">DPO</span><span class="tag">Alignment</span><span class="tag">Fine-tuning</span>
+          </div>
+        </div>
+        <div class="rcard">
+          <div class="rcard-num">03</div>
+          <h3>Neural Architecture Research</h3>
+          <p>Research into efficient transformer variants, novel attention mechanisms, and optimized neural architectures suited to low-compute settings common in university research labs across Bangladesh and South Asia.</p>
+          <div class="rcard-tags">
+            <span class="tag">Transformers</span><span class="tag">Efficiency</span><span class="tag">Architecture</span><span class="tag">Deep Learning</span>
+          </div>
+        </div>
+        <div class="rcard">
+          <div class="rcard-num">04</div>
+          <h3>Applied AI for Bangladesh</h3>
+          <p>Real-world applications of machine learning and AI — healthcare NLP systems, legal document analysis, agricultural advisory systems, and educational tools designed for Bangla speakers.</p>
+          <div class="rcard-tags">
+            <span class="tag">Healthcare</span><span class="tag">Education</span><span class="tag">Social Good</span><span class="tag">Applied AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="section" aria-label="Latest news and updates">
+    <div class="wrap">
+      <hr class="divider"/>
+      <p class="section-eyebrow">Latest from the lab</p>
+      <h2 class="section-title">News & Research Updates</h2>
+      <div class="news-list reveal">
+        <div class="news-row">
+          <span class="news-date">[Mon YYYY]</span>
+          <p class="news-text"><strong>[Paper title]</strong> accepted at <strong>[Venue]</strong>. Congratulations to [Author(s)]!</p>
+        </div>
+        <div class="news-row">
+          <span class="news-date">[Mon YYYY]</span>
+          <p class="news-text">New dataset <strong>[Dataset name]</strong> released on Hugging Face. <a href="#">Download →</a></p>
+        </div>
+        <div class="news-row">
+          <span class="news-date">[Mon YYYY]</span>
+          <p class="news-text">[Name] joins FLINT52 as [role]. Welcome!</p>
+        </div>
+        <div class="news-row">
+          <span class="news-date">[Mon YYYY]</span>
+          <p class="news-text">FLINT52 presents at <strong>[Conference / Workshop]</strong> in [City, Country].</p>
+        </div>
+        <div class="news-row">
+          <span class="news-date">[Mon YYYY]</span>
+          <p class="news-text">Lab founded. Research begins on [initial focus area].</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" aria-label="Call to action">
+    <div class="wrap reveal">
+      <div class="cta-block">
+        <div class="cta-text">
+          <h2>Collaborate with FLINT52 on AI Research</h2>
+          <p>We welcome motivated students, researchers, and collaborators passionate about natural language processing, low-resource languages, machine learning, and AI for social good in Bangladesh and South Asia.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer is injected by shared.js → buildFooter() -->
+<footer></footer>
+
+<!-- ONE shared JS for ALL pages (loads last for performance) -->
+<script src="shared.js"></script>
+
+</body>
+</html>
